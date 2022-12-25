@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/26309fe5a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                What's up, <input type="text" name="" id="Name" placeholder="Name here"/>
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>CREATE A TODO</h3>
+            <form id = "new-todo-form"  autocomplete="off"/>
+            <h4>What's on your todo list?</h4>
+            <input type="text" name="content" placeholder = "e.g. Make a task tracker app">
+            
+            <div class = "category-selector-header"> 
+                <h4>Pick a category</h4>
+                <div class = "edit-category-panel">
+                    <div id = "add-category">Add Category</div>
+                    <span class = "edit-category">  
+                         Edit categories 
+                         <i class="fa-solid fa-pencil edit-category-icon"></i>    
+                    </span>
+                </div>
+            </div>
+
+            <div class="options" id = "category-selector">
+                <!--
+
+                    <label>
+                        <input type="radio" name = "category" id = "category1" value = "Category 1"/>
+                        <span class="bubble category1"></span>
+                        <input class = "category-name" placeholder="Category 1" readonly/>
+                    </label>
+                    <label> 
+                        <input type="radio" name = "category" id = "category2" value = "Category 2"/>
+                        <span class="bubble category2"></span>
+                        <input class = "category-name" placeholder = "Category 2" readonly/>
+                    </label>
+                -->
+            </div>
+            <input class = "category0" id = "add-todo" type="submit" value="Add todo"/>
+        </form>
+        </section>
+
+        <section>
+            <h3>TODO LIST</h3>
+            <div class = "viewing-options">
+                <button class = "view-options-btn">
+                    <div class="">View options</div>
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <div class="viewing-options-menu">
+                    <div id = "viewMerged">View as single list</div>
+                </div>
+            </div>
+            <div class = "todo-list"></div>
+        </section>
+  
+        <section>
+            
+        </section>
+    </main>
+    
+    <script src = "main.js"></script>
+   </body>
+</html>
